@@ -146,8 +146,6 @@ def cross_validation(y, x, k_indices, k, lambda_, gamma,_max_iter,model,degree):
 def cross_validation_visualization(lambds, acc_tr, acc_te, degree,i):
     """visualization the curves of acc_train and acc_test."""
 
-    #train_colors = ['b','green','red','orange']
-    #test_colors = ['yellow','pink','tan','lime']
     train_colors = ['b','green','orange','tan']
     test_colors = ['r','pink','lime','yellow']
     plt.semilogx(lambds, acc_tr, marker=".", color=train_colors[i], label='Train degree '+str(degree))
@@ -160,7 +158,7 @@ def cross_validation_visualization(lambds, acc_tr, acc_te, degree,i):
     plt.grid(True)
     plt.savefig("cross_validation")
 
-def cross_validation_demo(y, x, gamma, max_iters,model,degree,i):
+def cross_validation_demo(y, x, gamma, max_iters,model,degree=1,i=0):
     """
     This function executes cross validation. Creates the lambdas that we are going to compare and
     calls the visualization function. Returns the test and train accuracy for every lambda.

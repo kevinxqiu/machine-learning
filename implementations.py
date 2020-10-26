@@ -175,7 +175,7 @@ def logistic_regression(y, tx , initial_w, max_iters, gamma):
         if len(losses) > 1 and np.abs(losses[-1] - losses[-2]) < threshold:
             break
 
-    return losses[-1], w
+    return w, losses[-1]
 
 
 
@@ -212,7 +212,7 @@ def learning_by_penalized_gradient(y, tx, w, gamma, lambda_):
     w = w - gamma * gradient
     return loss, w
 
-def reg_logistic_regression(y, tx, lambda_, initial_w, max_iter, gamma): # 
+def reg_logistic_regression(y, tx, lambda_, initial_w, max_iter, gamma):
     """Regularized logistic regression using gradient descent"""
     # init parameters
     max_iter = max_iter
@@ -234,5 +234,5 @@ def reg_logistic_regression(y, tx, lambda_, initial_w, max_iter, gamma): #
         if len(losses) > 1 and np.abs(losses[-1] - losses[-2]) < threshold:
             break
 
-    return losses, w
+    return w, losses[-1]
 
