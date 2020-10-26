@@ -17,6 +17,10 @@ The project structure is described as the following:
 
 ```markdown
 .
+
+├── data: place datasets into this folder
+        ├── train.csv: train dataset
+        └── test.csv: test dataset
 ├── report: contains LaTeX and pdf version of the report
 ├── impl_proj1.py: auxiliary functions including data preprocessing, accuracy, feature augmentation and cross validation
 ├── implementations_modified.py: modified implementations.py file for testing our pipeline
@@ -28,7 +32,7 @@ The project structure is described as the following:
 ├── run.py: contains the **final code** to train the model
 ```
 
-The datasets are not included in the repo due to its file size, but they can be found on [AIcrowd](https://www.aicrowd.com/challenges/epfl-machine-learning-higgs).
+The datasets are not included in the repo due to its file size, but they can be found on [AIcrowd](https://www.aicrowd.com/challenges/epfl-machine-learning-higgs). The datasets will need to be placed in the ```data``` folder.
 
 ## Files
 ### run.py
