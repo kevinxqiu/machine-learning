@@ -29,7 +29,7 @@
 \section{Introduction}
 \label{sec:intro}
 
-The Higgs boson is a by product between colliding protons. Due to its rapid decay, it is often difficult to observe and is only measured through its decay signature after collision\cite{higgs}. The Higgs boson dataset was developed in order to classify whether such event will result in a Higgs boson\cite{higgs}. The objective is to perform binary classification to distinguish signals of the Higgs boson from background noise.
+The Higgs boson is a by product between colliding protons. Due to its rapid decay, it is often difficult to observe and is only measured through its decay signature after collision \cite{higgs}. The Higgs boson dataset was developed in order to classify whether such event will result in a Higgs boson \cite{higgs}. The objective is to perform binary classification to distinguish signals of the Higgs boson from background noise.
 
 %One year after its discovery, a Nobel Prize was awarded to physiscists Peter Higgs and François Englert for their theoretical predications. It is now the latest major prediction of the Standard Model of Particle Physics and its experiments are still an ongoing discovery at CERN.
 
@@ -97,7 +97,7 @@ The hyperparameters selected lie in the following ranges:
 \end{enumerate}
 
 \subsection{Cross Validation}
-To validate the model, a 5-fold cross validation is used on the training set. This technique splits the dataset in five equivalent bins where each bin is selected as the test bin, and the four remaining ones are used to train the model. The resulting hyperparameters and its corresponding accuracy for each method is outlined in Table \ref{tab:hyper} . 
+To validate the model, a 5-fold cross validation is used on the training set. This technique splits the dataset in five equivalent bins where each bin is selected as the test bin, and the four remaining ones are used to train the model. The resulting hyperparameters and its corresponding accuracy for each method is outlined in Table \ref{tab:hyper}. 
 
 \begin{table}[h!]
   \centering
@@ -134,7 +134,7 @@ We show cross validation plots for ridge and regularized logistic regression in 
 
 \section{Results and Discussion}
 \label{sec:results}
-From the cross validation results, it can be seen that the favourable algorithm is ridge regression with an accuracy of 78.2\%. The obtained predictions are submitted on \texttt{AIcrowd}, achieving an accuracy of 78\% and an F1 score of 65.8\%. It is also evident in Figure\ref{fig:logistic} that the training accuracy is slightly higher than the testing accuracy, indicating a very minimal overfit model. It is also surprising to see logistic regression as not being the obvious method of choice for binary classification. However, this may be explained for several reasons.
+From the cross validation results, it can be seen that the favourable algorithm is ridge regression with an accuracy of 78.2\%. The obtained predictions are submitted on \texttt{AIcrowd}, achieving an accuracy of 78\% and an F1 score of 65.8\%. It is also evident in Figure \ref{fig:logistic} that the training accuracy is slightly higher than the testing accuracy, indicating a very minimal overfit model. It is also surprising to see logistic regression as not being the obvious method of choice for binary classification. However, this may be explained for several reasons.
 
 Firstly, logistic regression is an iterative method that requires to solve an optimization problem. As such, a greater number of iterations is beneficial in achieving a higher accuracy. Additionally, feature augmentation was omitted from the methodology which should have improved results. Furthermore, greater reduction of dimensions in the dataset will also attribute to more favourable results. A method such as Principal Component Analysis (PCA) will have simplified the model by identifying ideal features to include in training.
 
