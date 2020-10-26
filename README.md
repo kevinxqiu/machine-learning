@@ -22,13 +22,12 @@ The project structure is described as the following:
         ├── train.csv: train dataset
         └── test.csv: test dataset
 ├── report: contains LaTeX and pdf version of the report
+├── README.md: this file
 ├── impl_proj1.py: auxiliary functions including data preprocessing, accuracy, feature augmentation and cross validation
-├── implementations_modified.py: modified implementations.py file for testing our pipeline
 ├── implementations.py: contains **all the implementations** required as given in the project description
+├── implementations_modified.py: modified implementations.py file for testing our pipeline
 ├── proj1_helpers.py: provided functions and modified predicted_labels function for logistic regression
 ├── project1.ipynb: Jupyter notebook of project
-├── README.md: this file
-├── requirements.txt: contains the packages used to run the project
 ├── run.py: contains the **final code** to train the model
 ```
 
