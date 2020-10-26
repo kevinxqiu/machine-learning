@@ -25,7 +25,7 @@ data_mean = tX_rem.mean(axis=0)
 data_std = tX_rem.std(axis=0)
 tX_std = standardize(tX_rem,data_mean,data_std)
 tX_test_std = standardize(tX_test_rem,data_mean,data_std)
-lambda_ = 0.026827
+lambda_ = 0.0026827
 degree = 9
 
 #Building model with ridge regression
