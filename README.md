@@ -1,4 +1,4 @@
-# Machine Learning
+# Finding the Higgs Boson using Machine Learning
 
 The purpose of this project is to implement machine learning algorithms for binary classification of the Higgs boson dataset. The resulting predictions are submitted to [AIcrowd](https://www.aicrowd.com/challenges/epfl-machine-learning-higgs).
 
